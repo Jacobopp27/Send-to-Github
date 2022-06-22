@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h1 class="nav-title">Dojo Weather</h1>
+            <ul class="nav-links" onclick="alert('Loading weather report...')">
+                <li><a href="#">Burbank</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="todo">
+        <div class="ciudad">
+            <div class="sanjose">San Jose</div>
+            <div class="temperature"><p>show temperature in <select class="temperature">
+                <option>C</option>
+                <option>F</option>
+            </select></p></div>
+        </div>
+        <div class="dias">
+            <div class="today">
+                <div class="todaycard">
+                    <div><h2>Today</h2></div>
+                    <div><img src="img/some_rain.png" alt="some_rain"></div>
+                    <div><p class="description">some rain</p></div>
+                    <div class="grados">
+                        <div class="red">24</div>
+                        <div class="blue">18</div>
+                    </div>
+                </div>
+            </div>
+            <div class="today">
+                <div class="todaycard">
+                    <div><h2>Tomorrow</h2></div>
+                    <div><img src="img/some_sun.png" alt="some_rain"></div>
+                    <div><p class="description">some sun</p></div>
+                    <div class="grados">
+                        <div class="red">27</div>
+                        <div class="blue">19</div>
+                    </div>
+                </div>
+            </div>
+            <div class="today">
+                <div class="todaycard">
+                    <div><h2>Friday</h2></div>
+                    <div><img src="img/some_clouds.png" alt="some_rain"></div>
+                    <div><p class="description">some clouds</p></div>
+                    <div class="grados">
+                        <div class="red">21</div>
+                        <div class="blue">16</div>
+                    </div>
+                </div>
+            </div>
+            <div class="today">
+                <div class="todaycard">
+                    <div><h2>Saturday</h2></div>
+                    <div><img src="img/some_sun.png" alt="some_rain"></div>
+                    <div><p class="description">some sun</p></div>
+                    <div class="grados">
+                        <div class="red">26</div>
+                        <div class="blue">21</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coockies">
+            <div class="coockiebox">
+                <div class="coockie"> <img src="img/cookie.png" alt="coockie" id="gall"></div>
+                <div class="mitad">
+                    <div><h3>Stop! Coockie time</h3></div>
+                    <div class="desc"><p>We use coockies (sadly not edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <span><a href="#">Read more...</a></span></p></div>
+                </div>
+                <div class="right"><button class="boton" onclick="quitarcoockies()">I Accept</button></div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
